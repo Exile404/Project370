@@ -12,6 +12,7 @@ session_start();
     $result   = mysqli_query($conn, $sql);
     $row = mysqli_fetch_array($result);
 
+
 ?>
 
 <html lang="en">
@@ -55,7 +56,7 @@ session_start();
                             </strong>
                         </td>
                         <td class="text-primary">
-                            <?php echo $row['nid']; ?>   
+                            <?php echo $row['NID']; ?>   
                         </td>
                     </tr>
                     <tr>    
@@ -66,18 +67,7 @@ session_start();
                             </strong>
                         </td>
                         <td class="text-primary">
-                            Bootdey     
-                        </td>
-                    </tr>
-                    <tr>        
-                        <td>
-                            <strong>
-                                <span class="glyphicon glyphicon-cloud text-primary"></span>  
-                                Lastname                                                
-                            </strong>
-                        </td>
-                        <td class="text-primary">
-                            Bootstrap  
+                        <?php echo $row['Name']; ?>        
                         </td>
                     </tr>
 
@@ -113,18 +103,18 @@ session_start();
                             </strong>
                         </td>
                         <td class="text-primary">
-                            noreply@email.com  
+                        <?php echo $row['Email']; ?>   
                         </td>
                     </tr>
                     <tr>        
                         <td>
                             <strong>
                                 <span class="glyphicon glyphicon-calendar text-primary"></span>
-                                created                                                
+                                Birthdate                                                
                             </strong>
                         </td>
                         <td class="text-primary">
-                            20 jul 20014
+                        <?php echo $row['birth_date']; ?>   
                         </td>
                     </tr>
                     <tr>        
